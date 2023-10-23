@@ -1,0 +1,31 @@
+---
+title: "Zahraa's R Markdown file"
+author: "Zahraa"
+date: "10/23/2023"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This an R Markdown file where I show examples of what I can do on an R Markdown file so far.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r test}
+test <- c(1, 2, 3, 4, 5)
+summary(test)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(c(1,2,3,4,5), c(1,2,3,4,5), col='red',main="Zahraa's graph",col.main="black",xlab="test x-axis",ylab="test y-axis")
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
